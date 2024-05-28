@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'Inter';
+    src: url(assets/fonts/Inter.ttf);
+}
+
+body {
+    @apply text-white !font-inter;
+}
+
+.collapsed-items {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+}
+
+.collapsed-items.active {
+    max-height: 1000px;
+}
+
+.custom-writing-mode {
+    writing-mode: vertical-lr;
+}
+
+.radix-themes {
+    --default-font-family:  'Inter', sans-serif;
+    --heading-font-family:  'Inter', sans-serif;
+    --code-font-family:     'Inter', sans-serif;
+    --strong-font-family:   'Inter', sans-serif;
+    --em-font-family:       'Inter', sans-serif;
+    --quote-font-family:    'Inter', sans-serif;
+}
